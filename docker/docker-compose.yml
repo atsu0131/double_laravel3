@@ -9,7 +9,7 @@ services:
       context: .
       dockerfile: ./php/Dockerfile
     volumes:
-      - ../app2/:/var/www/html1
+      - ../app1/:/var/www/html1
       - ../app2/:/var/www/html2
     ports:
       - 8000:80
