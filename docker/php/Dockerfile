@@ -1,7 +1,7 @@
 FROM php:7.4.1-fpm
 
 # php.iniをコピー
-COPY ./docker/php/php.ini /usr/local/etc/php/php.ini
+COPY ./php/php.ini /usr/local/etc/php/php.ini
 
 #必要なパッケージ
 RUN apt-get update && apt-get -y upgrade \

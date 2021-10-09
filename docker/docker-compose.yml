@@ -11,9 +11,9 @@ services:
     volumes:
       - ../app2/:/var/www/html1
       - ../app2/:/var/www/html2
-　　ports:
-      - 10080:80
-      - 10081:81
+    ports:
+      - 8000:80
+      - 8001:81
     environment:
       - DB_CONNECTION=mysql
       - DB_HOST=db
